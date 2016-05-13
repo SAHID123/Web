@@ -1,94 +1,126 @@
-/*SELECTOR UNIVERSAL*/
-/**{
-    border: 1px solid blue;
+/* selector universal*/
+
+/* * {
+    border: 1px solid red;
     padding: 10px;
     margin: 10px;
-}*/
+} */
 
 .container {
     width: 920px;
     margin: 0 auto;
-    /*margin:o; aplica a todos*/
-    /*margin:0 0;primero aplica top-botton y el segundo right-left*/
-    /*margin:0 0 0;top righ-left botton*/
-    /*margin:0 0 0 0;top right botton left*/
-    /*margin-top, margin-right, margin-botton, margin-left*/
+    /* margin: 0; aplica a todos */
+    /* margin: 0 0; el primero aplica top-bottom y el segundo right-left */
+    /* margin: 0 0 0; top right-left bottom */
+    /* margin: 0 0 0 0; top right bottom left */
+    /* margin-top, margin-right, margin-bottom, margin-left */
 }
 
-#Encabezado{
-  height: 150px;
-   display: flex;
-   justify-content: space-between;
+#Encabezado {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
     align-content: flex-start;
     align-items: center;
 }
-#Encabezado figure{
-margin: 0    
+
+#Encabezado figure {
+    margin: 0;
 }
+
 #titulos * {
     margin: 0;
-     
 }
-#Encabezado h1 {font-size: 1.2em}
-#Encabezado h2 {font-size: 1em}
-#Encabezado h3 {font-size: 0.9em}
-#Encabezado h4 {font-size: 0.8em}
 
-#Menu{
+#Encabezado h1 { 
+    font-size: 1.2em; 
+    text-decoration: underline;   
+}
+#Encabezado h2 { font-size: 1em;   }
+#Encabezado h3 { font-size: 0.9em; }
+#Encabezado h4 { font-size: 0.8em; }
+#Menu {
+    height:  50px;
+    background-color: brown;
+}
+
+#Contenido {
+    
+}
+/*nota importante inicio*/
+
+#Nota-Importante {
+    height: 300px;
+    background-color: darkred;
+    margin: 20px 0;
+    box-shadow: 0 0 15px grey;
+    
+}
+#Nota-Importante img {
+  border: 10px solid white;  
+}
+/*Nota importante fin*/
+
+#Notas-Secundarias {
+    height: 300px;
+    width: 700px;
+    display: inline-block;
+    float: left;
+    background-color: blue;
+}
+
+#Publicidad {
+    height: 300px;
+    width: 220px;
+    display: inline-block;
+    float: right;
+    background-color: brown;
+}
+
+#Pie {
+    height: 150px;
+    clear: both;
+    background-color: yellowgreen;
+}
+
+#menu {
     height: 50px;
     display: flex;
     justify-content: center;
-         
+    background-color:gray;    
+}
+#menu ul {
+    padding: 0;
 }
 
-#Contenido{
-    
-}
-
-#Nota-Importante{
- height: 300px;
-   background-color:green;   
-}
-
-#Nota-Secundaria{
-    height: 300px;
-    width: 700px;
-    display:inline-block;
-    float: left;
-  background-color:yellow;
-}
-
-#Publicidad{
-    height: 300px;
-     width: 220px;
-    display:inline-block;
-    float:right;
-  background-color:peru;
-    
-}
-
-#Pie{
-    height: 150px;
-    clear: both;
-  background-color:coral;
-}
-#Menu li {
- list-style-type: none;
+#menu li { 
+    list-style-type: none;
     padding: 0;
     display: inline-block;
-   
+    
 }
-#Menu>ul>li{
+
+#menu li a {
+    text-decoration: none;
+    color: black;
+    font: inherit;
+    
+}
+
+#menu>ul>li {
     display: inline-block;
 }
-#Menu li a {
-  text-decoration: none;
-    color: black;
-}
-#Menu>ul>li a{
+
+#menu>ul>li>a {
     padding: 10px;
     background-color:gray;
+    
+}    
+
+#menu li ul {
+    display: none;
 }
-#Menu li ul {
-    display:none;
-}
+
+#menu>ul>li>a:hover {
+    background-color: lightgray;
+    transition: 0.2s;

@@ -3,70 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Proyecto Web</title>
-    <link rel="stylesheet" href="Css/Styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-   <div class="container">
-         <header id="Encabezado">
-             <figure>
-                 <img src="images/logo_sep.png" alt="logo sep">
-             </figure>
-             <div id="titulos">
-             <h1>sitio oficial cetis No.108</h1>
-               
-                <h2>secretaria de educacion publica</h2>
-                    
-            <h3>direccion general de educacion tecnologica industrial</h3>
-            
-            <H4>Centro de estudios tegnologico industrial y de servicios No.108
-            
-            gral. "gabriel leyva solano"C.C.T.</H4>     
-             </div>
-             <div id="Busqueda">
-               <figure>
-                <img src="images/sems_dgeti.png" alt="sems logo">
+    <div class="container">
+        <header id="Encabezado">
+                    <figure>
+<!-- rutas absolutas y relativas -->
+<!-- /relativa/a/raiz/del/sitio -->
+<!-- relativa/al/archivo/actual -->
+<!-- http://www.dominio.com/ruta/absoluta/index.html -->
+<!--file://c:\users\julia\practicas\12_proyecto_web\images\logo_sep.png -->
+                <img src="images/logo_sep.png" alt="logotipo SEP">
                 </figure>
-                <input type="text" name="busqueda" id="busqueda">
-                <button>Buscar</button>  
-             </div>
-         </header>
-        <nav id="Menu">
-            <ul> <!--unorder list-->
-            <li><a href="#">Inicio</a></li><!--listen-item-->
-            <li><a href="#"></a>Plantel</li><!--listen-item-->
-            <li><a href="#"></a>Oferta Educativa</li>
-            <ul>
-                <li><a href="#">Programacion</a></li>
-                <li><a href="#">Soporte</a></li>
-                <li><a href="#">Contabilidad</a></li>
-                <li><a href="#">Manteimiento aut.</a></li>
-                <li><a href="#">Electronica</a></li>
-            </ul>
-            <!--listen-item-->
-            <li><a href="#"></a>Alunmo</li><!--listen-item-->
-            <ul>
-                <li><a href="#">Horarios</a></li>
-                <li><a href="#">Calificaciones</a></li>
-                <li><a href="#"></a>Convocatorias</li>
-            </ul>
-            <li><a href="#"></a>Docentes</li><!--listen-item-->
-            <li><a href="#"></a>Empleados</li><!--listen-item-->
-            <li><a href="#"></a>Contactos</li><!--listen-item-->
-            </ul>
+                <div id="titulos">
+                <h1>Sitio Oficial del CETis No. 108</h1>
+                <h2>Subsecretaría de Educación Media Superior</h2>
+                <h3>Dirección General de Educación Tecnológica Industrial</h3>
+                <h4>Centro de Estudios Tecnológicos industrial y de servicios No. 108
+                    "Gral. Gabriel Leyva Solano" C.C.T. 25DCT0108H</h4>
+                </div>
+                <div id="busqueda">
+                <figure>
+                 <img src="images/sems_dgeti.png" alt="logotipo SEMS DGETI">
+                </figure>
+                 <input type="text" name="busqueda" id="busqueda">
+                 <button>buscar</button>
+                </div>    
+            
+        </header>
+        <nav id="menu">
+            <ul><!-- unordered list -->
+               <li><a href="#">Inicio</a></li><!-- list-item -->
+               <li><a href="#">Plantel</a></li><!-- list-item -->
+               <li><a href="#">Oferta educativa</a>
+                   <ul>
+                       <li><a href="#">Programación</a></li>
+                       <li><a href="#">Soporte</a></li>
+                       <li><a href="#">Contabilidad</a></li>
+                       <li><a href="#">Mantenimiento Aut.</a></li>
+                       <li><a href="#">Ele.</a></li>
+                   </ul>
+               </li><!-- list-item -->
+               <li><a href="#">Alumnos</a>
+                   <ul>
+                       <li><a href="#">Horarios</a></li>
+                       <li><a href="#">Calificaciones</a></li>
+                       <li><a href="#">Convocatorias</a></li>
+                   </ul>
+               </li><!-- list-item -->
+               <li><a href="#">Docentes</a></li><!-- list-item -->
+               <li><a href="#">Empleados</a></li><!-- list-item -->
+               <li><a href="#">Contacto</a></li><!-- list-item -->
+            </ul> 
         </nav>
         <main id="Contenido">
+          
+           <img src="images/ft.jpg" alt="nota importante">
+          
             <section id="Nota-Importante">
-                 Nota Importante
+                nota importante 920 x 360
+                
             </section>
-            <section id="Nota-Secundaria">
-                Notas Secundarias
+            <section id="Notas-Secundarias">
+                notas secundarias
             </section>
             <aside id="Publicidad">
-                Publicidad
+                publicidad
             </aside>
         </main>
         <footer id="Pie">
-            Pie
+            pie de pagina 
         </footer>
     </div>
 </body>
